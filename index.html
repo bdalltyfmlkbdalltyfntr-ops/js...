@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Tasks Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+            <h2>AdminPanel</h2>
+            <ul>
+                <li class="active">Tasks</li>
+                <li>Logout</li>
+            </ul>
+        </div>
+
+        <main class="main-content">
+            <header class="top-header">
+                <span>Dashboard > Tasks</span>
+                <span class="user-profile">Admin</span>
+            </header>
+
+            <section class="tasks-section">
+                <div class="header-row">
+                    <div>
+                        <h2>Tasks Management</h2>
+                        <p>View, manage and update system tasks.</p>
+                    </div>
+                    <a href="addTask.html" class="btn-add">+ Add Task</a>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>TASK NAME</th>
+                            <th>CATEGORY</th>
+                            <th>DUE DATE</th>
+                            <th>PRIORITY</th>
+                            <th>ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tasksTableBody">
+            
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
